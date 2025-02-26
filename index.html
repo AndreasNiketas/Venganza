@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,20 +9,32 @@
 </head>
 <body>
     <h2>Galería de Fotos</h2>
-    <div class="gallery">
-        <img src="1.jpg" alt="Foto 1" onclick="openModal(this.src)">
-        <img src="2.jpg" alt="Foto 2" onclick="openModal(this.src)">
-        <img src="3.jpg" alt="Foto 3" onclick="openModal(this.src)">
-        <img src="4.jpg" alt="Foto 4" onclick="openModal(this.src)">
-        <img src="5.jpg" alt="Foto 5" onclick="openModal(this.src)">
-        <img src="https://via.placeholder.com/150" alt="Foto 6" onclick="openModal(this.src)">
-        <img src="https://via.placeholder.com/150" alt="Foto 7" onclick="openModal(this.src)">
-        <img src="https://via.placeholder.com/150" alt="Foto 8" onclick="openModal(this.src)">
+    <nav>
+        <button onclick="showGallery(1)">Isa</button>
+        <button onclick="showGallery(2)">Andres</button>
+    </nav>
+
+    <div id="gallery1" class="gallery">
+        <img src="/img/isa/1.jpg" alt="Foto 1" onclick="openModal(this.src)">
+        <img src="/img/isa/2.jpg" alt="Foto 2" onclick="openModal(this.src)">
+        <img src="/img/isa/3.jpg" alt="Foto 3" onclick="openModal(this.src)">
+        <img src="/img/isa/4.jpg" alt="Foto 4" onclick="openModal(this.src)">
+        <img src="/img/isa/5.jpg" alt="Foto 5" onclick="openModal(this.src)">
+        <img src="/img/isa/6.jpg" alt="Foto 6" onclick="openModal(this.src)">
     </div>
+
+    <div id="gallery2" class="gallery" style="display: none;">
+        <img src="/img/andres/1.jpg" alt="Foto 1" onclick="openModal(this.src)">
+        <img src="/img/andres/2.jpg" alt="Foto 2" onclick="openModal(this.src)">
+        <img src="/img/andres/3.jpg" alt="Foto 3" onclick="openModal(this.src)">
+        <img src="/img/andres/4.jpg" alt="Foto 4" onclick="openModal(this.src)">
+    </div>
+
     <div class="modal" id="modal" onclick="closeModal()">
         <span class="close">&times;</span>
         <img id="modal-img">
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
