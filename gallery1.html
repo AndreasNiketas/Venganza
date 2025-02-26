@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Isa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Galería de Isa</h2>
+    <nav>
+        <a href="javascript:void(0);" class="btn10" id="back-button" onclick="location.href='index.html'">
+            <span>Volver</span>
+            <div class="transition"></div>
+        </a>
+    </nav>
+    <div class="gallery">
+        <img src="/img/isa/1.jpg" alt="Foto 1" onclick="openModal(this.src)">
+        <img src="/img/isa/2.jpg" alt="Foto 2" onclick="openModal(this.src)">
+        <img src="/img/isa/3.jpg" alt="Foto 3" onclick="openModal(this.src)">
+        <img src="/img/isa/4.jpg" alt="Foto 4" onclick="openModal(this.src)">
+        <img src="/img/isa/5.jpg" alt="Foto 5" onclick="openModal(this.src)">
+        <img src="/img/isa/6.jpg" alt="Foto 6" onclick="openModal(this.src)">
+        <img src="/img/isa/7.jpg" alt="Foto 7" onclick="openModal(this.src)">
+    </div>
+
+    <div class="modal" id="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
